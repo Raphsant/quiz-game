@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title {
+    position: relative;
+
+    color: crimson;
+}
+
+.navbar {
+    border-style: double;
+    padding: 0;
+    float: center;
+    overflow: hidden;
+    background-color: crimson;
+    margin: 0;
+    max-width: 240px;
+    position: relative;
+    border-radius: 30px;
+
+
+}
+
+
+
+
+.lists {
+    font-size: small;
+}
+
+.langlist {
+    font-size: small;
+    list-style: none;
+}
+
+.langlist li::before {
+    content: "♥";
+    padding-right: 0.5rem;
+}
+
+.links {
+    color: crimson;
+    text-decoration: crimson;
+
+}
+
+button {
+    display: block;
+    margin: 1rem 0;
+}
+
+.links:hover {
+    color: purple;
+    font-style: italic;
+}
+
+.links:visited {
+    color: white;
+}
+
+.welcome-message{
+    font-size: 1.5rem;
+}
