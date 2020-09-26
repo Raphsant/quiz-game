@@ -21,6 +21,13 @@ function RainbowClick() {
     console.log(value);
     setPlayerName(value);
   };
+  const hue = numClicks * 15;
+  const textStyle = {
+    backgroundColor: `hsl(${hue}, 100%, 30%)`,
+    color: "white",
+    padding: "1rem"
+  }
+    
   return (
     <main>
       <h1>Clicky State Demo</h1>
@@ -28,7 +35,7 @@ function RainbowClick() {
         <input type="text" value={playerName} onChange={onNameInputChange} />
       </div>
       <div>
-        <p>
+        <p style={textStyle}>
           {playerName}, You've clicked {numClicks} number of times
         </p>
         <button onClick={onButtonClick}>Click me</button>
